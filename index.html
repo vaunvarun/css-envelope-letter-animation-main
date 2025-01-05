@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style=";position: relative;top: 160px; left: 130px;width: 0px;"> <a href="https://website-2-rouge.vercel.app/"><button>Click</button></a></h1>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>DEAR PRINCESS.</strong>
+                        <p>
+                            HI PAPA INDA MAIL KU KEELA ORU LINK IRUKKUM ANDA LINK LA EN MANASUKKU THONRA ELLATHAYUM SHARE PANNI IRUKKEN 
+                            THEN NEE ADA PAARU THANK YOU 😘🫂. 
+                            . 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
