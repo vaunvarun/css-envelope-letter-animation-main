@@ -1,0 +1,57 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #animation-container {
+    text-align: center;
+  }
+  
+  #code-screen {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  #code-text {
+    font-size: 20px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+  }
+  
+  #title h1 {
+    font-size: 3em;
+    color: #61dafb;
+    animation: title-animation 2s ease-in-out;
+  }
+  
+  @keyframes title-animation {
+    0% { transform: translateY(-30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  #start-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #start-button:hover {
+    background-color: #21a1f1;
+  }
+  

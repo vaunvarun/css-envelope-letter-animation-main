@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spot the Error - Intro Animation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hi</h1>
+  <div id="animation-container">
+    <div id="code-screen">
+      <div id="code-text"></div>
+    </div>
+    <div id="title">
+      <h1>Spot the Error</h1>
+    </div>
+    <button id="start-button">Start Learning!</button>
+  </div>
+
+  <audio id="error-sound" src="error-sound.mp3" preload="auto"></audio>
+  <audio id="correct-sound" src="correct-sound.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
